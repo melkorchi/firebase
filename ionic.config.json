@@ -1,5 +1,7 @@
 {
   "name": "FirebaseProject",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
