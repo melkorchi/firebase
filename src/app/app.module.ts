@@ -11,11 +11,15 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AuthService } from './auth.service'; // Service
 import { AngularFireAuthModule } from 'angularfire2/auth';// Firebase authent
-import { Facebook } from '@ionic-native/facebook/ngx';
 import { AngularFireModule } from '@angular/fire'; // Firebase
-import { environment } from 'src/environments/environment';
+// import { AngularFireModule } from '@angularfire2'; // Firebase
 
-AuthService
+import { environment } from 'src/environments/environment';
+import { Facebook } from '@ionic-native/facebook/ngx';
+import { FCM } from '@ionic-native/fcm/ngx';
+import { FCMService } from './fcm.service';
+
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +30,9 @@ AuthService
     AuthService,
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    FCM,
+    FCMService
   ],
   bootstrap: [AppComponent]
 })
