@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="logo">Stop Tabac</p>
+  <form (ngSubmit)="login()">
+      <p>Connectez-vous à votre compte</p>
+      <ion-row>
+          <ion-col>
+              <ion-list inset>
+                  <ion-item>
+                      <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="user.email" (ngModelChange)="user.email = stringToUpperCase(user.email)">
+                          <ion-icon name="person"></ion-icon>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="user.password">
+                          <ion-icon name="lock"></ion-icon>
+                      </ion-input>
+                  </ion-item>
+              </ion-list>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col class="signin-col">
+              <ion-button ion-button class="submit-btn" full type="submit" [disabled]="user.email.trim().length < 5 || user.password.trim().length < 3">Login</ion-button>
+              <ion-button (click) = 'loginFB()' class="fb" ion-button full>Facebook</ion-button>
+              <ion-button class="tw" ion-button full>Twitter</ion-button>
+          </ion-col>
+      </ion-row>
+  </form>
+</ion-content>

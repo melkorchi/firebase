@@ -1,0 +1,85 @@
+ion-header {
+    ion-toolbar {
+        ion-title {
+            text-align: center;
+        }
+    }
+}
+ion-content {
+    // border: 1px solid red;
+    font-family: cursive;
+    p {
+        // margin-top: 10px;
+        padding: 0;
+        text-align: center;
+        color: #c159bf;
+        // border: 1px solid #c159bf;
+    }
+    .logo {
+        font-weight: bolder;
+        text-align: center;
+        margin: 20px auto;
+        // margin-top: 50px;
+        font-size: 150%;
+    }
+    form {
+        margin-top: 20px;
+        padding: 0;
+        border: 1px solid #c159bf;
+        border-radius: 6px;
+        // background: #c159bf;
+        p {
+            // border: 1px solid red;
+            margin-top: 20px;
+            padding: 0;
+            font-size: 110%;
+            margin-bottom: 0;
+        }
+        ion-item {
+            // border: 1px solid red;
+            // border-radius: 6px;
+            ion-input {
+                border: 1px solid #c159bf;
+                border-radius: 6px;
+                margin: 0;
+                width: 100%;
+                ion-icon {
+                    font-size: 20px;
+                    border-right: 1px solid #c159bf;
+                    padding: 5px;
+                    margin-right: 10px;
+                    color: #c159bf;
+                }
+            }
+            #shadow-root {
+                .item-highlight {
+                    --background: none;
+                }
+            }
+        }
+        ion-button {
+            margin: 0;
+            width: 100%;
+            --background: #c159bf;
+            margin-top: 5px;
+            // --background-focused: var(--ion-color-primary-shade);
+            &:hover, &.fb:active {
+                --background: #FFFFFF;
+                color: #c159bf;
+                border: 1px solid #c159bf;
+                border-radius: 6px;
+            }
+            &.fb {
+                --background: #10dc60;
+            }
+            &.fb:hover, &.fb:active {
+                border: 1px solid #10dc60;
+                border-radius: 6px;
+            }
+            
+            &.tw {
+                --background: #f04141;
+            }
+        }
+    }
+}
