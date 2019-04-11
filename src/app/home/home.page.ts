@@ -10,12 +10,17 @@ import { AuthService } from '../auth.service';
 export class HomePage {
 
   theData: string;
+  userFB: any;
 
   constructor (private auth:AuthService) {}
 
   goLoginFB() {
-    this.auth.facebookConnect().then((user) => {
-      this.theData = JSON.stringify(user);
+    this.auth.facebookConnect().then((data) => {
+      // this.theData = JSON.stringify(user);
+      this.userFB = data.user;
+      // console.log(data);
+      console.log(this.userFB.displayName);
+      console.log(this.userFB.email);
     })
   }
 }

@@ -33,7 +33,13 @@
     "core-js": "^2.5.4",
     "firebase": "^5.9.3",
     "rxjs": "~6.3.3",
-    "zone.js": "~0.8.29"
+    "zone.js": "~0.8.29",
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-ionic-webview": "^3.0.0",
+    "cordova-plugin-ionic-keyboard": "^2.0.5"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.12.3",
@@ -45,9 +51,10 @@
     "@angular/compiler-cli": "~7.2.2",
     "@angular/language-service": "~7.2.2",
     "@ionic/angular-toolkit": "~1.4.0",
-    "@types/node": "~10.14.2",
+    "@ionic/lab": "1.0.24",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~10.14.2",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
@@ -66,9 +73,20 @@
     "plugins": {
       "cordova-plugin-facebook4": {
         "APP_ID": "2851483031743005",
-        "APP_NAME": "FirebaseProject"
+        "APP_NAME": "FirebaseProject",
+        "FACEBOOK_HYBRID_APP_EVENTS": "false",
+        "FACEBOOK_ANDROID_SDK_VERSION": "4.40.0"
       },
-      "cordova-plugin-fcm-with-dependecy-updated": {}
-    }
+      "cordova-plugin-fcm-with-dependecy-updated": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }

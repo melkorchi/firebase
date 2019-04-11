@@ -82,9 +82,12 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^3.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-fcm-with-dependecy-updated" spec="2.4.0" />
     <plugin name="cordova-plugin-facebook4" spec="4.2.1">
         <variable name="APP_ID" value="2851483031743005" />
         <variable name="APP_NAME" value="FirebaseProject" />
+        <variable name="FACEBOOK_HYBRID_APP_EVENTS" value="false" />
+        <variable name="FACEBOOK_ANDROID_SDK_VERSION" value="4.40.0" />
     </plugin>
-    <plugin name="cordova-plugin-fcm-with-dependecy-updated" spec="2.4.0" />
+    <engine name="android" spec="7.1.4" />
 </widget>
